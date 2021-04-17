@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Parallel testw</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">27.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Parallel test12</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">43.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Parallel test1</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">58.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">15</td><td class="numi">15</td><td class="numi">0</td><td class="numi">0</td><td class="numi">58.3 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Parallel testw &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.newtours.tests.BookFlightTest</td><td><a href="#m1"><b>findFlights</b>  </a></td><td class="numi">1</td><td>1618423852801</td><td class="numi">665</td></tr><tr class="passedodd"><td><a href="#m2"><b>flightConfirmationPage</b>  </a></td><td class="numi">1</td><td>1618423853469</td><td class="numi">525</td></tr><tr class="passedodd"><td><a href="#m3"><b>flightDetailsPage</b>  </a></td><td class="numi">1</td><td>1618423850759</td><td class="numi">2040</td></tr><tr class="passedodd"><td><a href="#m4"><b>registrationConfirmationpage</b>  </a></td><td class="numi">1</td><td>1618423850292</td><td class="numi">446</td></tr><tr class="passedodd"><td><a href="#m5"><b>registrationpage</b>  </a></td><td class="numi">1</td><td>1618423842920</td><td class="numi">7363</td></tr>
+<tr><th colspan="4">Parallel test12 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.newtours.tests.BookFlightTest</td><td><a href="#m6"><b>findFlights</b>  </a></td><td class="numi">1</td><td>1618423869201</td><td class="numi">413</td></tr><tr class="passedodd"><td><a href="#m7"><b>flightConfirmationPage</b>  </a></td><td class="numi">1</td><td>1618423869616</td><td class="numi">439</td></tr><tr class="passedodd"><td><a href="#m8"><b>flightDetailsPage</b>  </a></td><td class="numi">1</td><td>1618423867228</td><td class="numi">1972</td></tr><tr class="passedodd"><td><a href="#m9"><b>registrationConfirmationpage</b>  </a></td><td class="numi">1</td><td>1618423866954</td><td class="numi">272</td></tr><tr class="passedodd"><td><a href="#m10"><b>registrationpage</b>  </a></td><td class="numi">1</td><td>1618423855634</td><td class="numi">11317</td></tr>
+<tr><th colspan="4">Parallel test1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.newtours.tests.BookFlightTest</td><td><a href="#m11"><b>findFlights</b>  </a></td><td class="numi">1</td><td>1618423883725</td><td class="numi">470</td></tr><tr class="passedodd"><td><a href="#m12"><b>flightConfirmationPage</b>  </a></td><td class="numi">1</td><td>1618423884196</td><td class="numi">379</td></tr><tr class="passedodd"><td><a href="#m13"><b>flightDetailsPage</b>  </a></td><td class="numi">1</td><td>1618423881885</td><td class="numi">1838</td></tr><tr class="passedodd"><td><a href="#m14"><b>registrationConfirmationpage</b>  </a></td><td class="numi">1</td><td>1618423881582</td><td class="numi">301</td></tr><tr class="passedodd"><td><a href="#m15"><b>registrationpage</b>  </a></td><td class="numi">1</td><td>1618423870920</td><td class="numi">10660</td></tr>
+</table>
+<h1>Parallel testw</h1>
+<h2 id="m1">com.newtours.tests.BookFlightTest:registrationConfirmationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.newtours.tests.BookFlightTest:flightConfirmationPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.newtours.tests.BookFlightTest:registrationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.newtours.tests.BookFlightTest:flightDetailsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.newtours.tests.BookFlightTest:findFlights</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Parallel test12</h1>
+<h2 id="m6">com.newtours.tests.BookFlightTest:findFlights</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.newtours.tests.BookFlightTest:registrationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.newtours.tests.BookFlightTest:registrationConfirmationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.newtours.tests.BookFlightTest:flightConfirmationPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.newtours.tests.BookFlightTest:flightDetailsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Parallel test1</h1>
+<h2 id="m11">com.newtours.tests.BookFlightTest:findFlights</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.newtours.tests.BookFlightTest:registrationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.newtours.tests.BookFlightTest:flightDetailsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.newtours.tests.BookFlightTest:flightConfirmationPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.newtours.tests.BookFlightTest:registrationConfirmationpage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

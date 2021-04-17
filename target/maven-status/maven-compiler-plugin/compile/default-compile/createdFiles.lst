@@ -1,0 +1,6 @@
+com\newtours\pages\FindFlights.class
+com\newtours\pages\FlightDetailsPage.class
+com\newtours\pages\RegistrationConfirmationPage.class
+com\newtours\pages\RegistrationPage.class
+selenium_docker\selenium_docker\App.class
+com\newtours\pages\FlightConfirmationPage.class

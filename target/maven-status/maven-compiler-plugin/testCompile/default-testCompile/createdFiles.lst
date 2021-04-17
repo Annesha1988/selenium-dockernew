@@ -1,0 +1,3 @@
+com\tests\BaseTest.class
+selenium_docker\selenium_docker\AppTest.class
+com\newtours\tests\BookFlightTest.class

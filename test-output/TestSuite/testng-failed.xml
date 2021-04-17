@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestSuite]">
+  <parameter name="noofpasserger" value="3"/>
+  <test name="Parallel test1(failed)">
+    <parameter name="noofpasserger" value="1"/>
+    <classes>
+      <class name="com.newtours.tests.BookFlightTest">
+        <methods>
+          <include name="flightConfirmationPage"/>
+          <include name="afterClass"/>
+          <include name="registrationpage"/>
+          <include name="initialize"/>
+          <include name="registrationConfirmationpage"/>
+          <include name="findFlights"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="flightDetailsPage"/>
+        </methods>
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </classes>
+  </test> <!-- Parallel test1(failed) -->
+  <test name="Parallel test12(failed)">
+    <parameter name="noofpasserger" value="2"/>
+    <classes>
+      <class name="com.newtours.tests.BookFlightTest">
+        <methods>
+          <include name="flightConfirmationPage"/>
+          <include name="afterClass"/>
+          <include name="registrationpage"/>
+          <include name="initialize"/>
+          <include name="registrationConfirmationpage"/>
+          <include name="findFlights"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="flightDetailsPage"/>
+        </methods>
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </classes>
+  </test> <!-- Parallel test12(failed) -->
+  <test name="Parallel testw(failed)">
+    <parameter name="noofpasserger" value="3"/>
+    <classes>
+      <class name="com.newtours.tests.BookFlightTest">
+        <methods>
+          <include name="flightConfirmationPage"/>
+          <include name="afterClass"/>
+          <include name="registrationpage"/>
+          <include name="initialize"/>
+          <include name="registrationConfirmationpage"/>
+          <include name="findFlights"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="flightDetailsPage"/>
+        </methods>
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </classes>
+  </test> <!-- Parallel testw(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" parallel="tests">
+<test name="Parallel test1">
+
+<parameter name="noofpasserger" value="1"></parameter>
+<classes>
+<class name="com.newtours.tests.BookFlightTest"></class>
+</classes>
+</test>
+<test name="Parallel test12">
+
+<parameter name="noofpasserger" value="2"></parameter>
+<classes>
+<class name="com.newtours.tests.BookFlightTest"></class>
+</classes>
+</test>
+<test name="Parallel testw">
+
+<parameter name="noofpasserger" value="3"></parameter>
+<classes>
+<class name="com.newtours.tests.BookFlightTest"></class>
+</classes>
+</test>
+</suite>
